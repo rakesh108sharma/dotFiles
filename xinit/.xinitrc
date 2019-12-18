@@ -1,7 +1,11 @@
 setxkbmap de
-#bgs /usr/local/share/wallpapers/freebsd-8k-wallpapers/FreeBSD-Green_Beastie_7680x4320.png
-#compton &
+compton &
 volumeicon &
 
-sxhkd &
-exec bspwm
+while xsetroot -name "$(date +%a" "%d/%m/%g"   "%H:%M" ")"
+    do 
+        sleep 60 
+    done &
+
+
+exec dwm
