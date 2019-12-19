@@ -6,8 +6,8 @@
 [ -f .bash_colors ] && . .bash_colors
 
 #PS1='[\u@\h \W]\$ '
-PS1="\n${cyan}\h: ${reset_color} ${yellow}\w\n${reset_color}-> "
-
+export PS1="\n${cyan}\h: ${reset_color} ${yellow}\w\n${reset_color}-> "
+export TERM=linux
 #####   A L I A S   #####
 # terminal
 alias ls='ls --color=auto'
@@ -36,7 +36,7 @@ alias nn='noice'
 alias ee='nano'
 alias gg='glances'
 alias grep='grep --color'
-alias zzz='echo -e "sudo pm-suspend\n" && sudo pm-suspend'
+alias zzz='echo -e "sudo zzz\n" && sudo zzz'
 alias poweroff='echo -e "sudo poweroff\n" && sudo poweroff'
 alias du='du -ach | sort -hr | most'
 alias mplayer='mplayer -af volnorm'
