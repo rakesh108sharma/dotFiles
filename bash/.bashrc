@@ -36,7 +36,7 @@ alias ee='nano'
 alias gg='glances'
 alias grep='grep --color'
 alias zzz='echo -e "sudo zzz\n" && sudo zzz'
-alias poweroff='echo -e "sudo poweroff\n" && sudo poweroff'
+alias qqq='echo -e "sudo poweroff\n" && sudo poweroff'
 alias du='du -ach | sort -hr | most'
 alias mplayer='mplayer -af volnorm'
 alias wetter='curl -4 http://wttr.in/Eupen'
@@ -52,6 +52,8 @@ alias fw='sudo iptables -L'
 [ -f /usr/share/doc/fzf/key-bindings.bash ] && . /usr/share/doc/fzf/key-bindings.bash
 
 function xlocate { sudo xlocate $1 | cut -f1 | sort -u ; }
+
+uu() { udevil umount /dev/sd$1 ; }     # unmount usb devices
 
 myip ()
 {
