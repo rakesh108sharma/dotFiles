@@ -6,8 +6,7 @@
 [ -f .bash_colors ] && . .bash_colors
 
 #PS1='[\u@\h \W]\$ '
-export PS1="\n${cyan}\h: ${reset_color} ${yellow}\w\n${reset_color}-> "
-export TERM=linux
+PS1="\n${cyan}\h: ${reset_color} ${yellow}\w\n${reset_color}-> "
 #####   A L I A S   #####
 # terminal
 alias ls='ls --color=auto'
