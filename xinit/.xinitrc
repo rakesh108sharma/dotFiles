@@ -1,4 +1,7 @@
 setxkbmap de
+amixer set PCM 100%,100%   # max boost
+amixer set Front 100%,80%  # laptop right speaker is broken - this helps
+ 
 compton &
 volumeicon &
 
