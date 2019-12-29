@@ -41,7 +41,9 @@ alias du='du -ach | sort -hr | most'
 alias mplayer='mplayer -af volnorm'
 alias wetter='curl -4 http://wttr.in/Eupen'
 alias yt='mpsyt'
-alias fw='sudo iptables -L'
+alias fw='sudo iptables -nvL'
+alias fw_watch='watch -n 5 sudo iptables -nvL'
+alias n='dnote'
 #####   END ALIAS   #####
 
 

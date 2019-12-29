@@ -12,7 +12,7 @@ sudo xbps-install xorg \
                   xterm \
                   lxterminal lxrandr \
                   compton dunst feh \
-                  adwaita-icon theme \
+                  adwaita-icon-theme \
                   font-hack-ttf google-fonts \
                   alsa-utils volumeicon
 

@@ -9,3 +9,7 @@ alias yyc 'sudo xbps-remove -o'
 alias yycc 'sudo xbps-remove -O'
 alias qqq 'sudo poweroff'
 alias zzz 'sudo zzz'
+alias fw 'sudo iptables -nvL'
+alias fw_watch 'watch -n 5 sudo iptables -nvL'
+alias n dnote
+

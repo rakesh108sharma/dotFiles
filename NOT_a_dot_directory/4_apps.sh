@@ -15,5 +15,10 @@ sudo xbsp-install mpv vlc \
                   chromium firefox-esr icecat \
                   opera otter-browser torbrowser-launcher \
                   transmission-gtk \
-                  udevil
+                  udevil \
+                  bwm-ng iptraf-ng tcpdump tcptrack ifstatus vnstat
+
+
+sudo ln -s /etc/sv/vnstatd /var/services/
+
 

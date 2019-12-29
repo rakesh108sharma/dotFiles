@@ -32,3 +32,11 @@ cd ..
 cd dmenu && sudo make clean install
 cd $HOME
 
+clear
+echo
+echo
+cat << EOF
+CHECK dwm st dmenu
+  maybe change & reinstall 
+EOF
+

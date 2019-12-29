@@ -7,6 +7,7 @@ set -o pipefail
 clear
 cd $HOME
 mkdir bin documents downloads video .config .dotfiles 
+
 sudo xbps-install -Su
 sudo xbps-install -Su
 sudo xbps-install bash bash-completion \
@@ -17,8 +18,10 @@ clear
 cd .dotfiles
 git clone https://github.com/rakesh108sharma/dotfiles
 cd ..
-clear
 
+clear
+echo
+echo
 cat << EOF
 "DO:   visudo"
 
