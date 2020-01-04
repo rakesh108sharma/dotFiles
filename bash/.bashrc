@@ -44,6 +44,11 @@ alias yt='mpsyt'
 alias fw='sudo iptables -nvL'
 alias fw_watch='watch -n 5 sudo iptables -nvL'
 alias n='dnote'
+alias wiki-='taizen --lang=en'
+alias wiki-de='taizen --lang=de'
+alias wiki-es='taizen --lang=es'
+alias wiki-fr='taizen --lang=fr'
+alias wiki-la='taizen --lang=la'
 #####   END ALIAS   #####
 
 
