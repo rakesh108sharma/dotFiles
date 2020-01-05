@@ -19,6 +19,8 @@ alias ....='cd ../../..'
 alias ~='cd ~'
 alias c='clear'
 alias _='sudo'
+alias eee='clear && cd /etc && ls'
+alias sss='clear && ls /var/service/ && sudo sv s /var/service/*'
 
 # packet manager
 alias yyu='echo -e "sudo xbps-install -Su\n" && sudo xbps-install -Su'

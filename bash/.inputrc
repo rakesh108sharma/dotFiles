@@ -1,1 +1,6 @@
 $include /etc/inputrc
+
+"\ep": '\C-e | most \015'
+"\ed": '\C-a "$(\C-e)"\C-a'
+"\es": '\C-asudo \C-e \015'
+"\e-": 'sudo !! \015'
