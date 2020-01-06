@@ -5,8 +5,11 @@
 
 [ -f .bash_colors ] && . .bash_colors
 
+export SHELL=/bin/bash
+
 #PS1='[\u@\h \W]\$ '
 PS1="\n${cyan}\h: ${reset_color} ${yellow}\w\n${reset_color}-> "
+
 #####   A L I A S   #####
 # terminal
 alias ls='ls --color=auto'
@@ -30,6 +33,15 @@ alias yyl='echo -e "sudo xbps-query -l | most\n" && sudo xbps-query -l | most'
 alias yyi='echo -e "sudo xbps-install\n" && sudo xbps-install'
 alias yyc='echo -e "sudo xbps-remove -o\n" && sudo xbps-remove -o'
 alias yyC='echo -e "sudo xbps-remove -O\n" && sudo xbps-remove -O'
+
+# fff file-manager
+export FFF_FAV1=/etc
+export FFF_FAV2=/etc/sv
+export FFF_FAV3=/var/service
+export FFF_FAV6=~/.config/mimeapps.list
+export FFF_FAV7=~/.xinitrc
+export FFF_FAV8=~/.config/fish/config.fish
+export FFF_FAV9=~/.bashrc
 
 # other
 alias rr='ranger'

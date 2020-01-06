@@ -12,4 +12,4 @@ sudo xbps-install -Su
 
 sudo xbsp-install ddgr googler taizen \
                   tealdear zeal \
-                  ffsreencast 
+                  ffscreencast 
