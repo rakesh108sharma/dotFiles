@@ -10,7 +10,7 @@ cd $HOME
 sudo xbps-install -Su
 sudo xbps-install -Su
 clear
-sudo xbps-install bash bash-completion fish \
+sudo xbps-install -y bash bash-completion fish-shell \
                   nano vim \
                   htop most \
                   w3m w3m-img \
@@ -20,6 +20,7 @@ sudo xbps-install bash bash-completion fish \
                   base-devel binutils coreutils usbutils 
 
 clear
+mkdir .suckless
 cd .suckless
 git clone https://git.suckless.org/dwm
 git clone https://git.suckless.org/dmenu
@@ -36,7 +37,12 @@ clear
 echo
 echo
 cat << EOF
-CHECK dwm st dmenu
-  maybe change & reinstall 
+
+
+
+          CHECK dwm st dmenu
+
+
+          maybe change & reinstall 
 EOF
 

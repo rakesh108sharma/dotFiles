@@ -7,9 +7,9 @@ set -o pipefail
 cd $HOME
 clear
 sudo xbps-install -Su
-sudo xbps-install void-repo-unfree
+sudo xbps-install void-repo-nonfree
 sudo xbps-install -Su
 
-sudo xbsp-install ddgr googler taizen \
-                  tealdear zeal \
+sudo xbps-install -y ddgr googler taizen \
+                  tealdeer zeal \
                   ffscreencast 

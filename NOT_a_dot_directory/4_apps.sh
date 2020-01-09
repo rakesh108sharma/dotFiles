@@ -7,11 +7,11 @@ set -o pipefail
 cd $HOME
 clear
 sudo xbps-install -Su
-sudo xbps-install void-repo-unfree
+sudo xbps-install void-repo-nonfree
 sudo xbps-install -Su
 
-sudo xbsp-install mpv vlc ffmpeg \
-                  youtube_dl gtk-youtube-viewer \
+sudo xbps-install -y mpv vlc ffmpeg \
+                  youtube-dl gtk-youtube-viewer \
                   chromium firefox-esr icecat \
                   opera otter-browser torbrowser-launcher \
                   transmission-gtk \
@@ -21,6 +21,6 @@ sudo xbsp-install mpv vlc ffmpeg \
                   mupdf apvlv vimiv 
 
 
-sudo ln -s /etc/sv/vnstatd /var/services/
+sudo ln -s /etc/sv/vnstatd /var/service/
 
 

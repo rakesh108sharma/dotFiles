@@ -15,9 +15,8 @@ sudo xbps-install bash bash-completion \
                   git stow
 
 clear
-cd .dotfiles
 git clone https://github.com/rakesh108sharma/dotfiles
-cd ..
+
 
 clear
 echo
@@ -25,6 +24,7 @@ echo
 cat << EOF
 "DO:   visudo"
 
+"CHECK: delete all bash-config files before using stow on .dotfiles"
 "DO:   apply .dotfiles as needed"
 
 

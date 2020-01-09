@@ -8,12 +8,12 @@ cd $HOME
 clear
 sudo xbps-install -Su
 
-sudo xbps-install xorg \
+sudo xbps-install -y xorg \
                   xterm \
                   lxterminal lxrandr \
                   compton dunst feh \
                   adwaita-icon-theme \
-                  font-hack-ttf google-fonts \
+                  font-hack-ttf google-fonts-ttf \
                   alsa-utils volumeicon
 
 cd .dotfiles

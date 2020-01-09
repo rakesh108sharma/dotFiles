@@ -92,6 +92,21 @@ cnoremap <C-A> <Home>
 cnoremap <C-E> <End>
 cnoremap <C-K> <C-U>
 
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" PLUGINS
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin()
+    Plug 'vim-airline/vim-airline'
+    Plug 'tomasr/molokai'
+
+call plug#end()
+
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""
 " HELPER functions
