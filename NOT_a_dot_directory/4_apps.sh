@@ -12,15 +12,25 @@ sudo xbps-install -Su
 
 sudo xbps-install -y mpv vlc ffmpeg \
                   youtube-dl gtk-youtube-viewer \
-                  chromium firefox-esr icecat \
-                  opera otter-browser torbrowser-launcher \
+                  chromium firefox-esr icecat opera otter-browser torbrowser-launcher \
                   transmission-gtk \
                   udevil \
                   bwm-ng iptraf-ng tcpdump arp-scan ifstatus vnstat iperf nmap \
                   dnote-cli \
-                  mupdf apvlv vimiv 
+                  apvlv vimiv 
 
 
 sudo ln -s /etc/sv/vnstatd /var/service/
+
+clear
+cat << EOF
+
+
+     Finished installing apps.
+
+     continue with step 5
+
+
+EOF
 
 

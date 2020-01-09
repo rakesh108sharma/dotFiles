@@ -38,11 +38,17 @@ echo
 echo
 cat << EOF
 
+          finished installing the base system.
+
+
+
 
 
           CHECK dwm st dmenu
 
 
           maybe change & reinstall 
+
+
 EOF
 

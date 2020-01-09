@@ -13,3 +13,16 @@ sudo xbps-install -Su
 sudo xbps-install -y ddgr googler taizen \
                   tealdeer zeal \
                   ffscreencast 
+
+clear
+cat << EOF
+
+
+          INSTALL   COMPLETE!
+
+
+
+EOF
+
+echo
+
