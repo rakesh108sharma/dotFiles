@@ -42,6 +42,7 @@ export FFF_FAV6=~/.config/mimeapps.list
 export FFF_FAV7=~/.xinitrc
 export FFF_FAV8=~/.config/fish/config.fish
 export FFF_FAV9=~/.bashrc
+export FFF_KEY_EXECUTABLE="O"     # Toggle executable flag
 
 # other
 alias rr='ranger'
@@ -54,7 +55,7 @@ alias qqq='echo -e "sudo poweroff\n" && sudo poweroff'
 alias du='du -ach | sort -hr | most'
 alias mplayer='mplayer -af volnorm'
 alias wetter='curl -4 http://wttr.in/Eupen'
-alias yt='mpsyt'
+alias yv='youtube-viewer --resolution=720p -C'
 alias fw='sudo iptables -nvL'
 alias fw_watch='watch -n 5 sudo iptables -nvL'
 alias n='dnote'
@@ -102,4 +103,11 @@ copy () { scp $@ userB@192.168.1.X: ; }
 #fh () { eval $(history | fzf +s | sed 's/ *[0-9]* *//') ; }
 #bind '"\C-R":"fh\n"'
 
+# Run 'fff' with 'f' or whatever you decide to name the function.
+f() 
+{
+    fff "$@"
+    cd "$(cat "${XDG_CACHE_HOME:=${HOME}/.cache}/fff/.fff_d")"
+}
+        
 #####   END FUNCTIONS   #####
