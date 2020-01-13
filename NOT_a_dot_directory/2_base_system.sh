@@ -14,7 +14,7 @@ sudo xbps-install -y bash bash-completion fish-shell \
                   nano vim \
                   htop most \
                   w3m w3m-img \
-                  ranger nnn fff\
+                  ranger fff lf ueberzug trash-cli highlight mediainfo \
                   libX11-devel libXft-devel libXinerama-devel \
                   git stow \
                   base-devel binutils coreutils usbutils 
