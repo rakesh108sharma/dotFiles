@@ -10,11 +10,11 @@ cd $HOME
 sudo xbps-install -Su
 sudo xbps-install -Su
 clear
-sudo xbps-install -y bash bash-completion shellcheck fish-shell \
+sudo xbps-install -y bash bash-completion hstr fselect shellcheck starship \
                   nano vim \
                   htop most \
                   w3m w3m-img \
-                  ranger fff lf ueberzug trash-cli highlight mediainfo \
+                  fff lf ueberzug trash-cli highlight mediainfo \
                   libX11-devel libXft-devel libXinerama-devel \
                   git stow \
                   base-devel binutils coreutils usbutils 

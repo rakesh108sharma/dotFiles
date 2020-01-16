@@ -16,7 +16,7 @@ sudo xbps-install -y mpv vlc ffmpeg \
                   transmission-gtk \
                   udevil \
                   bwm-ng iptraf-ng tcpdump arp-scan ifstatus vnstat iperf nmap \
-                  dnote-cli \
+                  dnote-cli buku \
                   apvlv vimiv 
 
 
