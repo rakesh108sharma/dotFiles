@@ -4,3 +4,5 @@ $include /etc/inputrc
 "\ed": '\C-a "$(\C-e)"\C-a'
 "\es": '\C-asudo \C-e \015'
 "\e-": 'sudo !! \015'
+"\ef": 'fc \015'
+

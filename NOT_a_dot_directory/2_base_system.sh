@@ -10,7 +10,7 @@ cd $HOME
 sudo xbps-install -Su
 sudo xbps-install -Su
 clear
-sudo xbps-install -y bash bash-completion fish-shell \
+sudo xbps-install -y bash bash-completion shellcheck fish-shell \
                   nano vim \
                   htop most \
                   w3m w3m-img \
