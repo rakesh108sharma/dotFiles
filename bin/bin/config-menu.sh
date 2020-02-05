@@ -1,6 +1,6 @@
 #!/bin/sh
 
-choice=$(echo -e "csh\nbash\nfish\nxinitrc\nrc\nvim\nbspwm\nsxhkd\nTHIS-menu" | dmenu)
+choice=$(echo -e "csh\nbash\nfish\nxinitrc\nrc\nvim\nbspwm\nsxhkd\nTHIS-menu" | dmenu -l 10)
 
 case $choice in
 	csh)

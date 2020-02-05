@@ -9,13 +9,13 @@ compton &
 volumeicon &
 clipit &
 
-{ sleep 3 && lxterminal -e bash & } 
+{ sleep 5 && tilda & } 
 
 while xsetroot -name "$(date +%a" "%d/%m/%g"   "%H:%M" ")"
     do 
         sleep 60 
     done &
 
-
+wallpapershow.sh &
 
 exec dwm

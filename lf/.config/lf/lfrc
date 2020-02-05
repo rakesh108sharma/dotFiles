@@ -29,7 +29,7 @@ map x $$f
 map X $chmod +x $f
 
 # dedicated keys for file opener actions
-map o &mimeopen $f
+map o &xdg-open $f
 map O $mimeopen --ask $f
 
 # define a custom 'open' command
