@@ -2,10 +2,14 @@
 #
 # sets the wallpaper
 
-cd $HOME/.wallpaper
+# first check and stop wallpapershow
+pgrep wallpapershow >/dev/null 2>&1 && pkill wallpapershow
 
-hsetroot -full $(ls | fzy)
 
-cd -
+cd "$HOME"/.wallpaper >/dev/null || exit
+
+hsetroot -full "$(fd | fzy)"
+
+cd - >/dev/null || exit
 
 exit 0

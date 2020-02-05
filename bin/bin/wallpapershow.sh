@@ -3,16 +3,16 @@
 # sets the wallpaper
 
 # IF the diashow is already running THEN exit
-running=$(pgrep -c wallpapershow) 
-[ $running -gt 1 ] && exit 1
+running="$(pgrep -c wallpapershow)" 
+[ "$running" -gt 1 ] && echo "Wallpaper diashow already running..." && exit 1
 
 # start the background process
 {
 
-  while true
+  while :
   do
-    cd $HOME/.wallpaper
-    list=$(ls)
+    cd "$HOME"/.wallpaper >/dev/null || exit
+    list="$(ls)"
 
     for x in ${list}
     do
