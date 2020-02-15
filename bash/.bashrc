@@ -54,7 +54,6 @@ alias yycc='echo -e "sudo xbps-remove -O\n" && sudo xbps-remove -O'
 alias rr='ranger'
 alias e='nano $(find $HOME | fzy -l 20)'
 alias ee='sudo nano $(find /etc/ -type f | fzy -l 20)'
-alias gg='glances'
 alias grep='grep --color'
 alias zzz='echo -e "sudo zzz\n" && sudo zzz'
 alias qqq='echo -e "sudo poweroff\n" && sudo poweroff'
@@ -159,6 +158,10 @@ export LESS_TERMCAP_us=$'\E[01;36m'
 # if this is interactive shell, then bind 'kill last command' to Ctrl-x k
 #if [[ $- =~ .*i.* ]]; then bind '"\C-xk": "\C-a hstr -k \C-j"'; fi
 ### END HSTR
+
+# playing with 'git --bare' repos
+alias gg='git --git-dir=/home/void/versuch --work-tree=/home/void'
+
 
 
 ### starship prompt # must be the last entry in bashrc

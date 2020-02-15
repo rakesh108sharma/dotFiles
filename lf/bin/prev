@@ -9,9 +9,10 @@ case "$1" in
     *.pdf) pdftotext "$1" -;;
     *.md) mdcat "$1";;
     *.mp4) mediainfo "$1";;
-    *.jpg|*.png) source "`ueberzug library`"
-            ImageLayer 0< <(
-              ImageLayer::add [identifier]="example0" [x]="0" [y]="0" [max_height]="40" [max_width]="40" [path]="$1"
-              read);;
+#    *.jpg|*.png) source "`ueberzug library`"
+#            ImageLayer 0< <(
+#              ImageLayer::add [identifier]="example0" [x]="0" [y]="0" [max_height]="40" [max_width]="40" [path]="$1"
+#              read);;
+    *.jpg|*.png) feh -i "$1";;
     *) highlight -O ansi "$1" || bat --pager=less "$1";;
 esac

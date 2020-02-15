@@ -104,6 +104,12 @@ cmd zip ${{
 set previewer ~/bin/prev
 map i $~/bin/prev $f | most 
 
+set ratios 1:2
+set drawbox
+set icons
+set incsearch
+# set color256
+
 map . set hidden!
 map e $vim $f
 
