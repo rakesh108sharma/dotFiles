@@ -1,6 +1,6 @@
 setxkbmap de
 
-xset dpms 180
+xset dpms 300
 
 amixer set PCM 100%,100%   # max boost
 amixer set Front 100%,80%  # laptop right speaker is broken - this helps
