@@ -17,7 +17,8 @@ sudo xbps-install -y mpv vlc ffmpeg \
                   udevil \
                   bwm-ng iptraf-ng tcpdump arp-scan ifstatus vnstat iperf nmap \
                   dnote-cli buku \
-                  apvlv vimiv 
+                  apvlv vimiv \
+                  entr 
 
 
 sudo ln -s /etc/sv/vnstatd /var/service/
