@@ -13,7 +13,7 @@ sudo xbps-install -Su
 sudo xbps-install -y mpv vlc ffmpeg \
                   youtube-dl gtk-youtube-viewer \
                   chromium firefox-esr icecat opera otter-browser torbrowser-launcher \
-                  transmission-gtk \
+                  transmission \
                   udevil \
                   bwm-ng iptraf-ng tcpdump arp-scan ifstatus vnstat iperf nmap \
                   dnote-cli buku \
