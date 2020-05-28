@@ -17,7 +17,10 @@ sudo xbps-install -y bash bash-completion hstr fselect shellcheck starship \
                   fff lf ueberzug trash-cli highlight mediainfo \
                   libX11-devel libXft-devel libXinerama-devel \
                   git stow \
-                  base-devel binutils coreutils usbutils 
+                  fd ripgrep \
+                  openssh scron \
+                  socklog socklog-void \
+                  base-devel binutils coreutils usbutils iputils
 
 clear
 mkdir .suckless
