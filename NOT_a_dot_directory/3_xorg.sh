@@ -11,7 +11,7 @@ sudo xbps-install -Su
 sudo xbps-install -y xorg \
                   xterm \
                   lxterminal lxrandr \
-                  compton dunst feh \
+                  picom dunst feh \
                   adwaita-icon-theme \
                   font-hack-ttf google-fonts-ttf \
                   alsa-utils volumeicon
